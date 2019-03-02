@@ -7,6 +7,5 @@
 
 @interface Document : NSDocument
 
-
 @end
 

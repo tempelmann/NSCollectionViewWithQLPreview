@@ -11,11 +11,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="NSCollectionViewTest" id="1Xt-HY-uBw">
+                            <menuItem title="NSCollectionViewWithQLPreview" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="NSCollectionViewTest" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="NSCollectionViewWithQLPreview" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About NSCollectionViewTest" id="5kV-Vb-QxS">
+                                        <menuItem title="About NSCollectionViewWithQLPreview" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -29,7 +29,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide NSCollectionViewTest" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide NSCollectionViewWithQLPreview" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -47,7 +47,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit NSCollectionViewTest" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit NSCollectionViewWithQLPreview" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -640,7 +640,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="NSCollectionViewTest Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="NSCollectionViewWithQLPreview Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -689,13 +689,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" drawsBackground="NO" id="JT7-Ec-20F">
                             <rect key="frame" x="1" y="1" width="448" height="298"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <collectionView selectable="YES" id="6i0-fm-ghl">
                                     <rect key="frame" x="0.0" y="0.0" width="448" height="158"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="jDk-cr-E4d">
-                                        <size key="itemSize" width="120" height="50"/>
+                                        <size key="itemSize" width="126" height="140"/>
                                         <edgeInsets key="sectionInset" left="5" right="5" top="5" bottom="5"/>
                                     </collectionViewFlowLayout>
                                     <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>

@@ -14,10 +14,12 @@
 		A4CE4C16222B16B000B6F502 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CE4C15222B16B000B6F502 /* main.m */; };
 		A4CE4C20222B17BC00B6F502 /* MyCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4CE4C1E222B17BC00B6F502 /* MyCollectionViewItem.xib */; };
 		A4CE4C21222B17BC00B6F502 /* MyCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CE4C1F222B17BC00B6F502 /* MyCollectionViewItem.m */; };
+		A4CE4C24222B1D0000B6F502 /* MyPreviewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CE4C23222B1D0000B6F502 /* MyPreviewItem.m */; };
+		A4CE4C27222B1E3B00B6F502 /* MyPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CE4C26222B1E3B00B6F502 /* MyPreviewView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A4CE4C03222B16B000B6F502 /* NSCollectionViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSCollectionViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4CE4C03222B16B000B6F502 /* NSCollectionViewWithQLPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSCollectionViewWithQLPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CE4C06222B16B000B6F502 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A4CE4C07222B16B000B6F502 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A4CE4C09222B16B000B6F502 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -30,6 +32,10 @@
 		A4CE4C1D222B17BC00B6F502 /* MyCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewItem.h; sourceTree = "<group>"; };
 		A4CE4C1E222B17BC00B6F502 /* MyCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionViewItem.xib; sourceTree = "<group>"; };
 		A4CE4C1F222B17BC00B6F502 /* MyCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewItem.m; sourceTree = "<group>"; };
+		A4CE4C22222B1D0000B6F502 /* MyPreviewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPreviewItem.h; sourceTree = "<group>"; };
+		A4CE4C23222B1D0000B6F502 /* MyPreviewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPreviewItem.m; sourceTree = "<group>"; };
+		A4CE4C25222B1E3B00B6F502 /* MyPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPreviewView.h; sourceTree = "<group>"; };
+		A4CE4C26222B1E3B00B6F502 /* MyPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPreviewView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +52,7 @@
 		A4CE4BFA222B16B000B6F502 = {
 			isa = PBXGroup;
 			children = (
-				A4CE4C05222B16B000B6F502 /* NSCollectionViewTest */,
+				A4CE4C05222B16B000B6F502 /* Source */,
 				A4CE4C04222B16B000B6F502 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +60,12 @@
 		A4CE4C04222B16B000B6F502 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4CE4C03222B16B000B6F502 /* NSCollectionViewTest.app */,
+				A4CE4C03222B16B000B6F502 /* NSCollectionViewWithQLPreview.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A4CE4C05222B16B000B6F502 /* NSCollectionViewTest */ = {
+		A4CE4C05222B16B000B6F502 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				A4CE4C06222B16B000B6F502 /* AppDelegate.h */,
@@ -67,23 +73,27 @@
 				A4CE4C09222B16B000B6F502 /* ViewController.h */,
 				A4CE4C0A222B16B000B6F502 /* ViewController.m */,
 				A4CE4C11222B16B000B6F502 /* Main.storyboard */,
-				A4CE4C0C222B16B000B6F502 /* Document.h */,
-				A4CE4C0D222B16B000B6F502 /* Document.m */,
 				A4CE4C1D222B17BC00B6F502 /* MyCollectionViewItem.h */,
 				A4CE4C1F222B17BC00B6F502 /* MyCollectionViewItem.m */,
 				A4CE4C1E222B17BC00B6F502 /* MyCollectionViewItem.xib */,
+				A4CE4C22222B1D0000B6F502 /* MyPreviewItem.h */,
+				A4CE4C23222B1D0000B6F502 /* MyPreviewItem.m */,
+				A4CE4C25222B1E3B00B6F502 /* MyPreviewView.h */,
+				A4CE4C26222B1E3B00B6F502 /* MyPreviewView.m */,
+				A4CE4C0C222B16B000B6F502 /* Document.h */,
+				A4CE4C0D222B16B000B6F502 /* Document.m */,
 				A4CE4C14222B16B000B6F502 /* Info.plist */,
 				A4CE4C15222B16B000B6F502 /* main.m */,
 			);
-			path = NSCollectionViewTest;
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A4CE4C02222B16B000B6F502 /* NSCollectionViewTest */ = {
+		A4CE4C02222B16B000B6F502 /* NSCollectionViewWithQLPreview */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4CE4C1A222B16B000B6F502 /* Build configuration list for PBXNativeTarget "NSCollectionViewTest" */;
+			buildConfigurationList = A4CE4C1A222B16B000B6F502 /* Build configuration list for PBXNativeTarget "NSCollectionViewWithQLPreview" */;
 			buildPhases = (
 				A4CE4BFF222B16B000B6F502 /* Sources */,
 				A4CE4C00222B16B000B6F502 /* Frameworks */,
@@ -93,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = NSCollectionViewTest;
+			name = NSCollectionViewWithQLPreview;
 			productName = NSCollectionViewTest;
-			productReference = A4CE4C03222B16B000B6F502 /* NSCollectionViewTest.app */;
+			productReference = A4CE4C03222B16B000B6F502 /* NSCollectionViewWithQLPreview.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -112,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A4CE4BFE222B16B000B6F502 /* Build configuration list for PBXProject "NSCollectionViewTest" */;
+			buildConfigurationList = A4CE4BFE222B16B000B6F502 /* Build configuration list for PBXProject "NSCollectionViewWithQLPreview" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -125,7 +135,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A4CE4C02222B16B000B6F502 /* NSCollectionViewTest */,
+				A4CE4C02222B16B000B6F502 /* NSCollectionViewWithQLPreview */,
 			);
 		};
 /* End PBXProject section */
@@ -149,7 +159,9 @@
 			files = (
 				A4CE4C0E222B16B000B6F502 /* Document.m in Sources */,
 				A4CE4C0B222B16B000B6F502 /* ViewController.m in Sources */,
+				A4CE4C27222B1E3B00B6F502 /* MyPreviewView.m in Sources */,
 				A4CE4C21222B17BC00B6F502 /* MyCollectionViewItem.m in Sources */,
+				A4CE4C24222B1D0000B6F502 /* MyPreviewItem.m in Sources */,
 				A4CE4C16222B16B000B6F502 /* main.m in Sources */,
 				A4CE4C08222B16B000B6F502 /* AppDelegate.m in Sources */,
 			);
@@ -277,7 +289,7 @@
 		A4CE4C1B222B16B000B6F502 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = NSCollectionViewTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -290,7 +302,7 @@
 		A4CE4C1C222B16B000B6F502 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = NSCollectionViewTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -303,7 +315,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A4CE4BFE222B16B000B6F502 /* Build configuration list for PBXProject "NSCollectionViewTest" */ = {
+		A4CE4BFE222B16B000B6F502 /* Build configuration list for PBXProject "NSCollectionViewWithQLPreview" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A4CE4C18222B16B000B6F502 /* Debug */,
@@ -312,7 +324,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4CE4C1A222B16B000B6F502 /* Build configuration list for PBXNativeTarget "NSCollectionViewTest" */ = {
+		A4CE4C1A222B16B000B6F502 /* Build configuration list for PBXNativeTarget "NSCollectionViewWithQLPreview" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A4CE4C1B222B16B000B6F502 /* Debug */,
