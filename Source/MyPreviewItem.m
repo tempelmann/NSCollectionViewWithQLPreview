@@ -21,6 +21,10 @@ static NSInteger instanceCount = 0;
 	return self;
 }
 
+-(NSString *)description {
+	return [NSString stringWithFormat:@"MyPreviewItem #%ld", self.serialNum];
+}
+
 -(void)dealloc {
 	NSLog(@"delete previewItem #%ld (now %ld)", self.serialNum, instanceCount);
 }
