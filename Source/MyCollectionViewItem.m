@@ -16,6 +16,7 @@ static NSInteger instanceCount = 0;
 - (void)dealloc {
 	--instanceCount;
 	NSLog(@"delete item #%ld (now %ld)", self.serialNum, instanceCount);
+	[self removeQLView];
 }
 
 /*
