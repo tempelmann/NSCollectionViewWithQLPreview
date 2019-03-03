@@ -16,7 +16,7 @@ static NSInteger instanceCount = 0;
 	if (self) {
 		++instanceCount;
 		self.serialNum = ++lastSerialNum;
-		NSLog(@"new previewItem #%ld (now %ld)", self.serialNum, instanceCount);
+		//NSLog(@"new previewItem #%ld (now %ld)", self.serialNum, instanceCount);
 	}
 	return self;
 }
@@ -26,7 +26,7 @@ static NSInteger instanceCount = 0;
 }
 
 -(void)dealloc {
-	NSLog(@"delete previewItem #%ld (now %ld)", self.serialNum, instanceCount);
+	//NSLog(@"delete previewItem #%ld (now %ld)", self.serialNum, instanceCount);
 }
 
 @end

@@ -31,11 +31,17 @@
 	previewItem.previewItemURL = url;
 	previewItem.previewItemTitle = item.textField.stringValue;
 
-	QLPreviewView *qlView = [[MyPreviewView alloc] initWithFrame:item.qlViewContainer.frame style:QLPreviewViewStyleCompact];
+	QLPreviewView *qlView;
+	if (item.qlViewContainer.subviews.count == 0) {
+		qlView = [[MyPreviewView alloc] initWithFrame:item.qlViewContainer.frame style:QLPreviewViewStyleCompact];
+		qlView.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
+		[item.qlViewContainer addSubview:qlView];
+	} else {
+		// We should never get here as long as MyCollectionViewItem's prepareForReuse discards the QLPreviewView as expected
+		qlView = item.qlViewContainer.subviews[0];
+		assert(qlView.previewItem==nil);
+	}
 	qlView.previewItem = previewItem;
-	qlView.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
-	NSParameterAssert(item.qlViewContainer.subviews.count==0);
-	[item.qlViewContainer addSubview:qlView];
 
 	return item;
 }
