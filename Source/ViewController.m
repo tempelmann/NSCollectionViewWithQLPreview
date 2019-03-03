@@ -35,6 +35,7 @@
 	if (item.qlViewContainer.subviews.count == 0) {
 		qlView = [[MyPreviewView alloc] initWithFrame:item.qlViewContainer.frame style:QLPreviewViewStyleCompact];
 		qlView.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
+		qlView.shouldCloseWithWindow = NO;	// Necessary to prevent an assertion error, see https://stackoverflow.com/questions/54963202/
 		[item.qlViewContainer addSubview:qlView];
 	} else {
 		// We should never get here as long as MyCollectionViewItem's prepareForReuse discards the QLPreviewView as expected
