@@ -58,8 +58,8 @@ static NSInteger instanceCount = 0;
 	if (self.qlViewContainer.subviews > 0) {
 		QLPreviewView *qlView = self.qlViewContainer.subviews[0];
 		NSParameterAssert(qlView);
-		qlView.previewItem = nil;
-		[qlView refreshPreviewItem];
+		//qlView.previewItem = nil;
+		//[qlView refreshPreviewItem];
 		[qlView close];
 		[qlView removeFromSuperview];
 	}
