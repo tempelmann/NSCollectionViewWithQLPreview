@@ -21,7 +21,7 @@
 	[super viewDidLoad];
 
 	self.contents = [NSMutableArray new];
-	NSString *dirPath = @"/Library/Desktop Pictures";
+	NSString *dirPath = @"/Library/User Pictures";
 	NSFileManager *fm = [NSFileManager defaultManager];
 	NSDirectoryEnumerator *dirEnum = [fm enumeratorAtPath:dirPath];
 	NSString *fileName;
@@ -29,7 +29,7 @@
 	while ((fileName = [dirEnum nextObject])) {
 		NSURL *url = [NSURL fileURLWithPath:[dirPath stringByAppendingPathComponent:fileName]];
 		if (url.hasDirectoryPath) {
-			[dirEnum skipDescendents];
+			//[dirEnum skipDescendents];
 		} else {
 			++i;
 			NSMutableDictionary *item = [NSMutableDictionary dictionary];
